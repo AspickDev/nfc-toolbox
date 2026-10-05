@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Toolbox &mdash; Terms of Use</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1rem;
+        }
+        .language-switcher {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+        .language-switcher button {
+            background: transparent;
+            border: 1px solid #bb86fc;
+            color: #bb86fc;
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .language-switcher button.active {
+            background: #bb86fc;
+            color: #121212;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+        .nav-links a {
+            margin: 0 1rem;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.language-switcher button').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button id="btn-en" class="active" onclick="switchLanguage('en')">EN</button>
+            <button id="btn-ru" onclick="switchLanguage('ru')">RU</button>
+            <button id="btn-uz" onclick="switchLanguage('uz')">UZ</button>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="content-section active">
+            <div class="header">
+                <h1>Terms of Use</h1>
+                <p><strong>NFC Toolbox</strong></p>
+                <p>Effective Date: October 2026</p>
+            </div>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the NFC Toolbox application, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the application.</p>
+
+            <h2>2. License and Scope of Use</h2>
+            <p>NFC Toolbox grants you a personal, revocable, non-exclusive, non-transferable license to use the application strictly for lawful personal, educational, research, and diagnostic purposes.</p>
+
+            <h2>3. Responsible Use &amp; Ethical Requirements</h2>
+            <p>NFC Toolbox provides low-level tools for interacting with RFID and NFC technologies. You acknowledge and agree that:</p>
+            <ul>
+                <li>You are solely responsible for ensuring that your use of the application complies with all applicable local, national, and international laws and regulations.</li>
+                <li>You will not use NFC Toolbox to clone, duplicate, inspect, or emulate access cards, payment credentials, or identity documents belonging to third parties without explicit authorization.</li>
+                <li>The application's EMV and card inspection tools are intended solely for personal inspection and diagnostic analysis of tags you legally own.</li>
+            </ul>
+
+            <h2>4. Data Privacy &amp; Local Storage</h2>
+            <p>NFC Toolbox operates entirely offline. All data, dumps, keys, and logs processed by the app remain stored locally on your device. You are responsible for safeguarding any files exported to your device storage.</p>
+
+            <h2>5. Disclaimer of Warranties</h2>
+            <p>NFC Toolbox is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express or implied. We do not warrant that the application will be error-free, uninterrupted, or compatible with all NFC hardware configurations.</p>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by applicable law, the developer shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the application, including data loss or hardware incompatibility.</p>
+
+            <h2>7. Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms of Use at any time. Changes will be posted on this page with an updated "Effective Date".</p>
+
+            <h2>8. Contact Us</h2>
+            <p>For questions or feedback regarding these Terms, contact the developer on Telegram at <strong>@MarufjonovDev</strong> or via email at <strong>aspickdev@gmail.com</strong>.</p>
+        </div>
+
+        <!-- Russian Content -->
+        <div id="content-ru" class="content-section">
+            <div class="header">
+                <h1>Условия использования</h1>
+                <p><strong>NFC Toolbox</strong></p>
+                <p>Дата вступления в силу: Октябрь 2026</p>
+            </div>
+            
+            <h2>1. Принятие условий</h2>
+            <p>Загружая, устанавливая или используя приложение NFC Toolbox, вы соглашаетесь соблюдать настоящие Условия использования. Если вы не согласны с этими условиями, пожалуйста, не используйте приложение.</p>
+
+            <h2>2. Лицензия и область использования</h2>
+            <p>NFC Toolbox предоставляет вам персональную, отзывную, неисключительную и непередаваемую лицензию на использование приложения исключительно в законных личных, образовательных, исследовательских и диагностических целях.</p>
+
+            <h2>3. Ответственное использование и этические нормы</h2>
+            <p>NFC Toolbox предоставляет низкоуровневые инструменты для работы с технологиями RFID и NFC. Вы признаете и соглашаетесь со следующим:</p>
+            <ul>
+                <li>Вы несете полную ответственность за соблюдение применимого местного, национального и международного законодательства при использовании приложения.</li>
+                <li>Запрещается использовать приложение для клонирования, дублирования или эмуляции чужих карт доступа, платежных данных или удостоверений личности без явного разрешения владельца.</li>
+                <li>Функции анализа EMV и смарт-карт предназначены исключительно для личной проверки и технической диагностики карт, законным владельцем которых вы являетесь.</li>
+            </ul>
+
+            <h2>4. Конфиденциальность и локальное хранение</h2>
+            <p>Приложение NFC Toolbox работает полностью офлайн. Все данные, дампы, ключи и логи сохраняются исключительно локально на вашем устройстве. Вы несете ответственность за сохранность экспортированных файлов.</p>
+
+            <h2>5. Отказ от гарантий</h2>
+            <p>Приложение предоставляется на условиях «КАК ЕСТЬ» («AS IS») и «ПО МЕРЕ ДОСТУПНОСТИ» без каких-либо явных или подразумеваемых гарантий. Разработчик не гарантирует бесперебойную работу приложения или совместимость со всеми типами NFC-модулей.</p>
+
+            <h2>6. Ограничение ответственности</h2>
+            <p>В максимально разрешенной законом степени разработчик не несет ответственности за любые прямые, косвенные или случайные убытки, возникшие в результате использования или невозможности использования приложения.</p>
+
+            <h2>7. Изменения в условиях</h2>
+            <p>Мы оставляем за собой право обновлять эти Условия использования в любое время. Изменения публикуются на этой странице с обновленной датой вступления в силу.</p>
+
+            <h2>8. Контакты</h2>
+            <p>По любым вопросам относительно данных Условий обращайтесь к разработчику в Telegram <strong>@MarufjonovDev</strong> или по электронной почте <strong>aspickdev@gmail.com</strong>.</p>
+        </div>
+
+        <!-- Uzbek Content -->
+        <div id="content-uz" class="content-section">
+            <div class="header">
+                <h1>Foydalanish shartlari</h1>
+                <p><strong>NFC Toolbox</strong></p>
+                <p>Kuchga kirish sanasi: Oktyabr 2026</p>
+            </div>
+            
+            <h2>1. Shartlarni qabul qilish</h2>
+            <p>NFC Toolbox ilovasini yuklab olish, o'rnatish yoki undan foydalanish orqali siz ushbu Foydalanish shartlariga rozilik bildirasiz. Agar siz ushbu shartlarga rozi bo'lmasangiz, ilovadan foydalanmasligingizni so'raymiz.</p>
+
+            <h2>2. Litsenziya va foydalanish doirasi</h2>
+            <p>NFC Toolbox sizga ilovadan faqat shaxsiy, ta'lim, tadqiqot va diagnostika maqsadlarida qonuniy foydalanish uchun shaxsiy, qaytarib olinadigan va o'zgaga o'tkazilmaydigan litsenziya taqdim etadi.</p>
+
+            <h2>3. Mas'uliyatli foydalanish va qonun talablari</h2>
+            <p>NFC Toolbox RFID va NFC texnologiyalari bilan ishlash uchun kuchli vositalarni taqdim etadi. Siz quyidagilarni tan olasiz va ularga rozilik bildirasiz:</p>
+            <ul>
+                <li>Ilovadan foydalanishda amaldagi barcha mahalliy va xalqaro qonunlarga rioya qilish uchun faqat o'zingiz to'liq javobgarsiz.</li>
+                <li>Uchinchi shaxslarga tegishli ruxsatnoma kartalari, to'lov vositalari yoki shaxsni tasdiqlovchi hujjatlarni ruxsatsiz klonlash, nusxalash yoki emulyatsiya qilish uchun ilovadan foydalanish qat'iyan man etiladi.</li>
+                <li>EMV va bank kartalarini ko'rish imkoniyatlari faqat o'zingizga qonuniy tegishli kartalarni shaxsiy tekshirish va texnik tahlil qilish uchun mo'ljallangan.</li>
+            </ul>
+
+            <h2>4. Maxfiylik va lokal saqlash</h2>
+            <p>NFC Toolbox to'liq oflayn ishlaydi. Ilova tomonidan qayta ishlangan barcha ma'lumotlar, damplar va kalitlar faqat qurilmangizning o'zida saqlanadi. Eksport qilingan fayllar xavfsizligi uchun foydalanuvchi javobgardir.</p>
+
+            <h2>5. Kafolatlarning rad etilishi</h2>
+            <p>Ilova hech qanday kafolatlarsiz "BORICHA" ("AS IS") taqdim etiladi. Dasturchi ilovaning mutlaqo xatosiz ishlashini yoki barcha rusumdagi NFC chiplari bilan to'liq mos kelishini kafolatlamaydi.</p>
+
+            <h2>6. Javobgarlikni cheklash</h2>
+            <p>Qonun tomonidan ruxsat etilgan maksimal darajada, dasturchi ilovadan foydalanish yoki foydalana olmaslik oqibatida yuzaga kelishi mumkin bo'lgan har qanday to'g'ridan-to'g'ri yoki bilvosita zararlar uchun javobgar bo'lmaydi.</p>
+
+            <h2>7. Shartlardagi o'zgarishlar</h2>
+            <p>Biz istalgan vaqtda ushbu Foydalanish shartlariga o'zgartirish kiritish huquqini saqlab qolamiz. O'zgarishlar ushbu sahifada yangilangan sana bilan e'lon qilinadi.</p>
+
+            <h2>8. Bog'lanish</h2>
+            <p>Ushbu shartlar bo'yicha savollaringiz bo'lsa, Telegram'da <strong>@MarufjonovDev</strong> orqali yoki elektron pochta orqali <strong>aspickdev@gmail.com</strong> manzilida dasturchi bilan bog'laning.</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>

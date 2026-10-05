@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Toolbox &mdash; Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1rem;
+        }
+        .language-switcher {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+        .language-switcher button {
+            background: transparent;
+            border: 1px solid #bb86fc;
+            color: #bb86fc;
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .language-switcher button.active {
+            background: #bb86fc;
+            color: #121212;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.language-switcher button').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button id="btn-en" class="active" onclick="switchLanguage('en')">EN</button>
+            <button id="btn-ru" onclick="switchLanguage('ru')">RU</button>
+            <button id="btn-uz" onclick="switchLanguage('uz')">UZ</button>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="content-section active">
+            <div class="header">
+                <h1>Privacy Policy</h1>
+                <p><strong>NFC Toolbox</strong></p>
+                <p>Effective Date: October 2026</p>
+            </div>
+            
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy applies to the NFC Toolbox application for Android. We respect your privacy and are committed to protecting it. This document explains our practices regarding data collection and usage.</p>
+
+            <h2>2. Data Collection and Usage</h2>
+            <p><strong>NFC Toolbox does not collect, store, or transmit any personal data.</strong></p>
+            <ul>
+                <li>All NFC tag data is processed and stored locally on your device.</li>
+                <li>The application does not use any analytics services or network communication to track your usage.</li>
+                <li>We do not share any data with third parties.</li>
+            </ul>
+
+            <h2>3. App Permissions Explained</h2>
+            <p>The app requires certain permissions to function properly:</p>
+            <ul>
+                <li><strong>NFC:</strong> Core functionality required to read and write NFC tags.</li>
+                <li><strong>Storage:</strong> Required to save or export tag dumps to your device's local storage.</li>
+            </ul>
+
+            <h2>4. Third-Party SDKs</h2>
+            <p>The app includes the Google Play In-App Review SDK, which allows users to leave reviews without exiting the app. This SDK is provided by Google and operates under Google's Privacy Policy.</p>
+
+            <h2>5. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Effective Date".</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact the developer at <strong>@MarufjonovDev</strong> on Telegram or via email at <strong>aspickdev@gmail.com</strong>.</p>
+        </div>
+
+        <!-- Russian Content -->
+        <div id="content-ru" class="content-section">
+            <div class="header">
+                <h1>Политика конфиденциальности</h1>
+                <p><strong>NFC Toolbox</strong></p>
+                <p>Дата вступления в силу: Октябрь 2026</p>
+            </div>
+            
+            <h2>1. Введение</h2>
+            <p>Настоящая Политика конфиденциальности применяется к приложению NFC Toolbox для Android. Мы уважаем вашу конфиденциальность и стремимся ее защищать. Этот документ объясняет наши методы сбора и использования данных.</p>
+
+            <h2>2. Сбор и использование данных</h2>
+            <p><strong>NFC Toolbox не собирает, не хранит и не передает никакие личные данные.</strong></p>
+            <ul>
+                <li>Все данные NFC-меток обрабатываются и хранятся локально на вашем устройстве.</li>
+                <li>Приложение не использует аналитические сервисы или сетевое взаимодействие для отслеживания вашего использования.</li>
+                <li>Мы не передаем никакие данные третьим лицам.</li>
+            </ul>
+
+            <h2>3. Разрешения приложения</h2>
+            <p>Для правильной работы приложению требуются следующие разрешения:</p>
+            <ul>
+                <li><strong>NFC:</strong> Основная функция, необходимая для чтения и записи NFC-меток.</li>
+                <li><strong>Хранилище:</strong> Необходимо для сохранения или экспорта дампов меток в локальное хранилище вашего устройства.</li>
+            </ul>
+
+            <h2>4. Сторонние SDK</h2>
+            <p>В приложение встроен Google Play In-App Review SDK, который позволяет пользователям оставлять отзывы, не выходя из приложения. Этот SDK предоставляется Google и работает в соответствии с Политикой конфиденциальности Google.</p>
+
+            <h2>5. Изменения в этой Политике</h2>
+            <p>Мы можем время от времени обновлять эту Политику конфиденциальности. Любые изменения будут отражены на этой странице с обновленной "Датой вступления в силу".</p>
+
+            <h2>6. Связаться с нами</h2>
+            <p>Если у вас есть вопросы или опасения по поводу этой Политики конфиденциальности, свяжитесь с разработчиком в Telegram <strong>@MarufjonovDev</strong> или по электронной почте <strong>aspickdev@gmail.com</strong>.</p>
+        </div>
+
+        <!-- Uzbek Content -->
+        <div id="content-uz" class="content-section">
+            <div class="header">
+                <h1>Maxfiylik siyosati</h1>
+                <p><strong>NFC Toolbox</strong></p>
+                <p>Kuchga kirish sanasi: Oktyabr 2026</p>
+            </div>
+            
+            <h2>1. Kirish</h2>
+            <p>Ushbu Maxfiylik siyosati Android uchun NFC Toolbox ilovasiga tatbiq etiladi. Biz sizning maxfiyligingizni hurmat qilamiz va uni himoya qilishga intilamiz. Ushbu hujjat ma'lumotlarni yig'ish va ulardan foydalanish borasidagi amaliyotlarimizni tushuntiradi.</p>
+
+            <h2>2. Ma'lumotlarni yig'ish va ulardan foydalanish</h2>
+            <p><strong>NFC Toolbox hech qanday shaxsiy ma'lumotlarni yig'maydi, saqlamaydi va uzatmaydi.</strong></p>
+            <ul>
+                <li>Barcha NFC teglari ma'lumotlari qurilmangizda lokal ravishda qayta ishlanadi va saqlanadi.</li>
+                <li>Ilova foydalanishni kuzatish uchun hech qanday tahlil xizmatlari yoki tarmoq aloqasidan foydalanmaydi.</li>
+                <li>Biz hech qanday ma'lumotlarni uchinchi shaxslar bilan baham ko'rmaymiz.</li>
+            </ul>
+
+            <h2>3. Ilova ruxsatnomalari tushuntirildi</h2>
+            <p>Ilova to'g'ri ishlashi uchun ma'lum ruxsatlarni talab qiladi:</p>
+            <ul>
+                <li><strong>NFC:</strong> NFC teglarini o'qish va yozish uchun zarur bo'lgan asosiy funksionallik.</li>
+                <li><strong>Xotira:</strong> Teg damplarini qurilmangizning lokal xotirasiga saqlash yoki eksport qilish uchun kerak.</li>
+            </ul>
+
+            <h2>4. Uchinchi tomon SDK-lari</h2>
+            <p>Ilova Google Play In-App Review SDK-ni o'z ichiga oladi, bu foydalanuvchilarga ilovadan chiqmasdan sharh qoldirish imkonini beradi. Ushbu SDK Google tomonidan taqdim etiladi va Google Maxfiylik Siyosati ostida ishlaydi.</p>
+
+            <h2>5. Ushbu siyosatdagi o'zgarishlar</h2>
+            <p>Biz vaqti-vaqti bilan ushbu Maxfiylik siyosatini yangilashimiz mumkin. Har qanday o'zgarishlar ushbu sahifada yangilangan "Kuchga kirish sanasi" bilan aks ettiriladi.</p>
+
+            <h2>6. Biz bilan bog'lanish</h2>
+            <p>Agar ushbu Maxfiylik siyosati bo'yicha savollaringiz yoki xavotirlaringiz bo'lsa, dasturchi bilan Telegram'da <strong>@MarufjonovDev</strong> yoki elektron pochta orqali <strong>aspickdev@gmail.com</strong> manzilida bog'laning.</p>
+        </div>
+    </div>
+</body>
+</html>
